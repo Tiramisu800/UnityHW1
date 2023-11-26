@@ -2890,7 +2890,7 @@ MonoBehaviour:
   _health: 100
   damage: 10
   _fillSpeed: 10
-  _gameObject: {fileID: 1052235485}
+  _animator: {fileID: 1694733470}
 --- !u!1 &1804674990
 GameObject:
   m_ObjectHideFlags: 0
@@ -3080,9 +3080,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a73bf3686ecefa458b95a986acc684c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _movementSlider: {fileID: 1835071507}
-  _animator: {fileID: 1694733470}
-  _gameobject: {fileID: 1052235485}
 --- !u!114 &1835071507
 MonoBehaviour:
   m_ObjectHideFlags: 0

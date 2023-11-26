@@ -9,9 +9,9 @@ public class HealthController : MonoBehaviour
     [SerializeField] private float _health = 100;
     [SerializeField] private float damage = 10;
     [SerializeField] public float _fillSpeed;
+    [SerializeField] private Animator _animator;
 
     private float _healthPercents;
-    [SerializeField] GameObject _gameObject;
 
     void Start()
     {
@@ -23,12 +23,15 @@ public class HealthController : MonoBehaviour
         if (_health > 0)
         {
             _health -= damage;
+
+            _animator.SetTrigger("Hit");
         }
         else
         {
+            _animator.SetTrigger("Death");
+
             _health = 0;
 
-            _gameObject.SetActive(false);
         }
 
         _healthPercents = _health / 100;
